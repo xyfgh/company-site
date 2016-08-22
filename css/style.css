@@ -1,0 +1,460 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "微软雅黑";
+
+	/*禁止选中*/
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select:none;
+	-khtml-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+
+body{
+	background: #F5F5F5;
+}
+
+a{
+	text-decoration: none;
+	font: inherit;
+	color: inherit;
+}
+
+.top{
+	border-bottom: 2px solid #DDD;
+	height: 27px;
+	width: 100%;
+}
+
+.topContent{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.topContent li{
+	list-style-image: url(../image/li_bg.gif);
+	float: right;
+	/*margin: 0 10px;*/
+	width: 70px;
+}
+.topContent li a{
+	text-decoration: none;
+	line-height: 27px;
+	color: #666;
+}
+
+.wrap{
+	width: 1000px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	background: #FFF;
+	/*padding-bottom: 5px;*/
+}
+
+.logo{
+	background: #FFF;
+	height: 100px;
+}
+
+.logoLeft{
+	float: left;
+}
+
+.logoRight{
+	float: right;
+	height: 28px;
+	margin: 20px 40px 0 0;
+}
+
+.logoRight p{
+	display: inline;
+	font-size: 20px;
+	color: #8E8E8E;
+	vertical-align: middle;
+}
+
+.logoRight a{
+	font-size: 20px;
+	color: red;
+}
+
+.logoRight img{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.nav{
+	width: 100%;
+	height: 40px;
+	background:#802A2A;
+	border-radius: 2px;
+}
+
+.nav ul{
+	margin:auto 20px;
+}
+.nav li{
+	list-style: none;	
+	float: left;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	color: #EEE;
+}
+
+.nav li:hover{
+	background: #701010;
+}
+
+.nav li a{
+	display: block;
+	/*整个长方形区域可点击，而不是只有文本可点击*/
+	font-weight: bold;
+	font-size: 14px;
+	color: #EEE;
+	text-decoration: none;
+	line-height: 40px;
+}
+.search{
+	float: right;
+	background: #FFF;
+	height: 30px;
+	width: 230px;
+	margin: 5px 20px;
+}
+.searchText{
+	float: left;
+	line-height: 30px;
+	height: 30px;
+	width: 184px;
+	border:none;
+	outline: none;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.searchSubmit{
+	float: right;
+	background: url(../image/search.jpg) no-repeat right center #FFF;
+	height: 30px;
+	width: 30px;
+	border: none;
+	outline: none;
+	cursor:pointer;
+	margin: auto 3px;
+}
+
+#focusPic{
+	/*width: 1000px;*/
+	height: 310px;
+	overflow: hidden;
+	clear: both;
+}
+#focusPic li{
+	list-style: none;
+	float: left;
+}
+
+/*.pic img{
+	display: block;
+}*/
+
+.information{
+	/*border:1px solid #CCC;*/
+	height: 250px;
+	width: 1000px;
+	background: #FFF;
+	/*margin-top: 5px;*/
+	padding: 5px 0;
+}
+
+.news{
+	width: 340px;
+	height: 248px;
+	border: 1px solid #DDD;
+	float: left;
+	margin-right: 7px;
+	overflow: hidden;
+}
+
+.production{
+	width: 410px;
+	height: 248px;
+	border: 1px solid #DDD;
+	float: left;
+	margin-right: 7px;
+}
+
+.sidebar{
+	width: 230px;
+	height: 248px;
+	border: 1px solid #DDD;
+	float: left;
+}
+
+.title{
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px solid #8E8E8E;
+	/*padding: 0 10px;*/
+	
+}
+
+.title h2{
+	float: left;
+	font-size: 14px;
+	color: #333;
+	text-indent: 1em;
+	/*width: 70%;*/
+}
+
+
+.title a{
+	color: #333;
+	float: right;
+}
+
+.newsPic img,.proPic img {
+	margin-right: 10px;
+	float: left;
+}
+
+h3{
+	line-height: 24px;
+	width: 180px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 14px;
+	color: #C00;
+/*	display: inline-block;
+	padding-left: 10px;*/
+}
+
+.newsPic p{
+	text-indent:2em;
+	width: 180px;
+	height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+}
+
+.newsPic,.proPic {
+	line-height: 20px;
+	padding: 10px;
+}
+
+.newsList{
+	clear: both;
+}
+
+.newsList ul{
+	margin-top: 10px;
+}
+.newsList li{
+	list-style-image: url(../image/list.jpg);
+	margin-left: 20px;
+	border-bottom: 1px dotted #CCC;
+	width: 90%;
+}
+
+/*新闻列表中的标题*/
+.newsList a{
+	margin-right: 10px;
+	color: #000;
+	line-height: 22px;
+	height: 22px;
+	font-size: 14px;
+}
+.newsList a:hover{
+	color: #C00;
+}
+
+/*新闻列表中标题的日期*/
+.newsList span{
+	float: right;
+	color: #666;
+	line-height: 22px;
+	height: 22px;
+	/*font-weight: bold;*/
+}
+
+.proPic p{
+	text-indent:2em;
+	width: 220px;
+	height: 80px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+}
+
+.proType{
+	height: 60px;
+	width: 370px;
+	margin: 20px auto;
+}
+
+.proType ul{
+	clear: both;
+}
+
+.proType li{
+	float: left;
+	list-style-type: none;
+	line-height: 60px;
+	margin:auto 14px;
+	font-size: 14px;
+}
+
+.sidebarVideo{
+	padding: 5px;
+	height: 140px;
+}
+
+.sidebarAd img{
+	height: 59px;
+	width: 228px;
+	border: 1px solid #EEE;
+}
+
+/*版权声明框*/
+.copyright{
+	width: 100%;
+	background: #E8E8E8;
+	height: 180px;
+	/*margin-top: 5px;*/
+	/*已改为information的padding*/
+	clear: both;
+}
+.copyright_content{
+	width: 1000px;
+	margin:10 auto;
+	padding: 20px 0;
+}
+.copyright_content li{
+	list-style-type: none;
+	float: left;
+	width: 200px;
+	text-align: center;
+}
+
+.copyright_content li a{
+	font-size: 18px;
+	color: #999;
+	line-height: 30px;
+}
+.copyright_content li li a{
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.newslistpagePic{
+	width: 1000px;
+	display: block;
+	/*img标签下会出现3px或5px的空白，猜测是由于行内元素行与行之间的间隔，
+	因此设置为块元素可消除此间隔*/
+}
+
+.newsMain{
+	width: inherit;
+	background-color: #FFF;
+	padding: 5px 0;
+	float: left;
+	/*为使newsbox高度增大时newsmain随之增大，newsmain不设置高度;
+	由上导致newsmain塌陷，因此也设置浮动*/
+}
+
+.newsType{
+	/*height: 245px;*/
+	/*可自动撑开，因此不必定义height*/
+	width: 218px;
+	border: 1px solid #DDD;
+	border-bottom: none;
+	float: left;
+}
+
+.newslistBox{
+	min-height: 330px;
+	width: 773px;
+	border: 1px solid #DDD;
+	float: right;
+}
+
+.newsType h2{
+	font-size: 14px;
+	color: #333;
+	height: 35px;
+	width: 218px;
+	line-height: 35px;
+	/*padding-left: 10px;*/
+	text-indent: 1em;
+	/*margin-left: -10px;*/
+	background: url(../image/titile_bg.gif) repeat-x;
+}
+
+.newsTypeContent{
+	background: url(../image/content_bg.gif) repeat-x;
+}
+
+.newsTypeContent li{
+	list-style-type: none;
+	width: 218px;
+	height: 29px;
+	line-height: 29px;
+	/*border: 1px solid #EEE;*/
+	/*display: block;*/
+	border-bottom: 1px solid #DDD;
+}
+
+.newsTypeContent li a{
+	display: block;
+	font-size: 14px;
+	color: #666;
+	background: url(../image/li_bg.gif) no-repeat left center;
+	padding-left: 15px;
+}
+
+.newsTypeContent li a:hover{
+	background: url(../image/li_bg2.gif) no-repeat left center;
+	background-color: #EEE;
+}
+
+.newslistBox h2{
+	font-size: 14px;
+	color: #333;
+	height: 35px;
+	line-height: 35px;
+	text-indent: 1em;
+	background: url(../image/type_bg.png) repeat-x;
+}
+
+.pageNum{
+	text-align: center;
+	margin: 10px 0;
+}
+
+.pageNum a{
+	display: inline-block;
+	border: 1px solid #DDD;
+	margin: 5px;
+	padding: 5px 10px;
+}
+
+.pageNum a:link,.pageNum a:visited{
+	color: #000;
+}
+
+/*a:link只有在a标签里有href属性的情况下才会有效，href值可为空*/
+/*在CSS定义中:hover必须位于:link和:visited之后（如果存在的话），这样样式才能生效。*/
+
+.pageNum a:hover,.pageNum a:active{
+	color: #FFF;
+	background-color: #CC1B1B;
+}
